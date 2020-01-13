@@ -15,7 +15,7 @@ mix.js('resources/js/app.js', 'public/js')
     .sass('resources/sass/app.scss', 'public/css')
     .sass('resources/sass/admin.scss', 'public/css')
     
-    //11課題6： webpack.mix.jsを編集して、profile.scss をコンパイルするように編集してみましょう。
+//Laravel 11 課題6： webpack.mix.jsを編集して、profile.scss をコンパイルするように編集してみましょう。
     .sass('resources/sass/profile.scss', 'public/css');
 
 

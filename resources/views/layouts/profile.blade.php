@@ -1,4 +1,9 @@
 <!DOCTYPE html>
+
+<!--Laravel 11 課題3. 【応用】 resources/views/layouts/admin.blade.php をコピーして、
+profile.blade.php を同じディレクトリ（resources/views/layouts）に作成しましょう。
+また、以下の部分を下の※1のように修正しましょう。-->
+
 <html lang="{{ app()->getLocale() }}">
     <head>
         <meta charset="utf-8">
