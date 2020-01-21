@@ -17,7 +17,7 @@
                     
                     @if (count($errors) > 0)
                         <ul>
-                            @foreach($errors->all() as $e) <!-- エラー表示-->
+                            @foreach($errors->all() as $e) <!--Laravel14課題6 エラー表示-->
                                 <li>{{ $e }}</li>
                             @endforeach
                         </ul>
