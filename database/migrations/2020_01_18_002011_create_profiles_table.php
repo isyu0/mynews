@@ -21,10 +21,10 @@ class CreateProfilesTable extends Migration
 profilesというテーブル名で名前(name)、性別(gender)、趣味(hobby)、
 自己紹介(introduction)を保存できるように修正して、migrateしてテーブルを作成しましょう。*/            
             
-            $table->string('name');  //名前を保存するカラム(入力必須）
-            $table->string('gender');//性別を保存するカラム(入力必須）  
-            $table->string('hobby'); // 趣味を保存するカラム(入力必須）
-            $table->string('introduction'); // 自己紹介を保存するカラム(入力必須）
+            $table->string('name');  //名前を保存するカラム
+            $table->string('gender');//性別を保存するカラム  
+            $table->string('hobby'); // 趣味を保存するカラム
+            $table->string('introduction'); // 自己紹介を保存するカラム
         });
     }
 
