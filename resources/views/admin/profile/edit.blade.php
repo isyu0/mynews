@@ -1,7 +1,10 @@
+<!--Laravel16課題3：プロフィール編集画面を作成-->
+
 @extends('layouts.profile')
 @section('title', 'プロフィールの編集画面')
 
 @section('content')
+
     <div class="container">
         <div class="row">
             <div class="col-md-8 mx-auto">
