@@ -28,17 +28,11 @@ Route::group(['prefix' => 'admin'], function() {
 Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function() {
     Route::get('news/create', 'Admin\NewsController@add');
     Route::post('news/create', 'Admin\NewsController@create');
-    
-//Laravel13.課題3 admin/profile/create に postメソッドでアクセスしたら ProfileController の create Action に割り当てるように設定
     Route::post('profile/create', 'Admin\ProfileController@create');
-    
-//Laravel13.課題6 admin/profile/edit に postメソッドでアクセスしたら ProfileController の update Action に割り当てるように設定
     Route::post('profile/edit', 'Admin\ProfileController@update');
 });
 
-
 Auth::routes();
-
 Route::get('/home', 'HomeController@index')->name('home');
-
-
+Route::get('/', 'NewsController@index');
+Route::get('/profile', 'ProfileController@index');

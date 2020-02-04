@@ -1,3 +1,8 @@
+@charset "UTF-8";
+
+/*Laravel 11 課題5. 【応用】 resources/sass/admin.scss をコピーして profile.scss を
+resources/sassに作成しましょう。後ほ どこちらは課題で編集します。*/
+
 body {
   background-repeat: no-repeat;
   background-position: center;
