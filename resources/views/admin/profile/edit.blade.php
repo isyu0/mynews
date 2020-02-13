@@ -21,26 +21,31 @@
                     <div class="form-group row">
                         <label class="col-md-2">氏名(name)</label>
                         <div class="col-md-10">
-                            <input type="text" class="form-control" name="name" value="{{ old('name') }}">
+                            <input type="text" class="form-control" name="name" value="{{ $profile_form->name }}">
                         </div>
                     </div>
                     <div class="form-group row">
                         <label class="col-md-2">性別(gender)</label>
                         <div class="col-md-10">
-                            <label><input type="checkbox" name="gender" value="male">男性</label>
-                            <label><input type="checkbox" name="gender" value="female">女性</label>
+                            @if ($profile_form->gender == 'male')
+                            <label><input type="radio" name="gender" value="male"checked>男性</label>
+                            <label><input type="radio" name="gender" value="female">女性</label>
+                            @else ($profile_from->gender == 'female')
+                            <label><input type="radio" name="gender" value="male">男性</label>
+                            <label><input type="radio" name="gender" value="female"checked>女性</label>
+                            @endif
                         </div>
                     </div>
                     <div class="form-group row">
                         <label class="col-md-2">趣味(hobby)</label>
                         <div class="col-md-10">
-                            <textarea class="form-control" name="hobby" rows="5">{{ old('hobby') }}</textarea>
+                            <textarea class="form-control" name="hobby" rows="5">{{ $profile_form->hobby }}</textarea>
                         </div>
                     </div>
                     <div class="form-group row">
                         <label class="col-md-2">自己紹介欄(introduction)</label>
                         <div class="col-md-10">
-                            <textarea class="form-control" name="introduction" rows="10">{{ old('introduction') }}</textarea>
+                            <textarea class="form-control" name="introduction" rows="10">{{ $profile_form->introduction }}</textarea>
                         </div>
                     </div>
                     {{ csrf_field() }}

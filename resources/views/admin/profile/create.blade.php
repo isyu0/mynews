@@ -31,8 +31,8 @@
                     <div class="form-group row">
                         <label class="col-md-2">性別(gender)</label>
                         <div class="col-md-10">
-                            <label><input type="checkbox" name="gender" value="male">男性</label>
-                            <label><input type="checkbox" name="gender" value="female">女性</label>
+                            <label><input type="radio" name="gender" value="male">男性</label>
+                            <label><input type="radio" name="gender" value="female">女性</label>
                         </div>
                     </div>
                     <div class="form-group row">
