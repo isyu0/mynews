@@ -4,7 +4,7 @@
     <div class="container">
         <hr color="#c0c0c0">
         <div class="row">
-            <h2>News一覧</h2>
+            <h2>ニュース一覧</h2>
         </div>
         @if (!is_null($headline))
             <div class="row">
